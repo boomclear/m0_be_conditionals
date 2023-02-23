@@ -23,25 +23,26 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+p number_teachers < number_students
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
-
+p number_teachers == string_teachers
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
-
+p number_teachers !== number_students
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
-
+p number_students >= 20
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
-
+p number_students >= 21
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
-
+p number_students <= 20
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+p number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -54,21 +55,22 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# Is 4 less than 9, true
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
-
+# is 4 less than books which is equal to 3, false
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
-
+# are there less friends than siblings, false
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+# are the number of attendees not equal to meals. true
 
 #-------------------
 # PART 3: Logical Operators
@@ -90,15 +92,15 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && age > 2
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: I did it this way because dogs under the age of 2 are generally thought to be puppies. 
